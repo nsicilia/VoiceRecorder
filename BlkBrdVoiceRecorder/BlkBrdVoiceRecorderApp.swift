@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct BlkBrdVoiceRecorderApp: App {
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(audioRecorder: AudioRecorder())
         }
     }
 }

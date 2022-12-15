@@ -11,6 +11,12 @@
 		0171FBD6294BA58C007DCD99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171FBD5294BA58C007DCD99 /* ContentView.swift */; };
 		0171FBD8294BA58D007DCD99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0171FBD7294BA58D007DCD99 /* Assets.xcassets */; };
 		0171FBDB294BA58D007DCD99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0171FBDA294BA58D007DCD99 /* Preview Assets.xcassets */; };
+		0171FBE2294BA79C007DCD99 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171FBE1294BA79C007DCD99 /* AudioRecorder.swift */; };
+		0171FBE4294BAD45007DCD99 /* RecordingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171FBE3294BAD45007DCD99 /* RecordingsList.swift */; };
+		0171FBE6294BB259007DCD99 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171FBE5294BB259007DCD99 /* Extensions.swift */; };
+		0171FBE8294BBC1B007DCD99 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171FBE7294BBC1B007DCD99 /* RecordingDataModel.swift */; };
+		0171FBEA294BBE3D007DCD99 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171FBE9294BBE3D007DCD99 /* Helper.swift */; };
+		0171FBEC294BCF31007DCD99 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0171FBEB294BCF31007DCD99 /* AudioPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		0171FBD5294BA58C007DCD99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0171FBD7294BA58D007DCD99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0171FBDA294BA58D007DCD99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0171FBE1294BA79C007DCD99 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		0171FBE3294BAD45007DCD99 /* RecordingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsList.swift; sourceTree = "<group>"; };
+		0171FBE5294BB259007DCD99 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0171FBE7294BBC1B007DCD99 /* RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDataModel.swift; sourceTree = "<group>"; };
+		0171FBE9294BBE3D007DCD99 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		0171FBEB294BCF31007DCD99 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +67,12 @@
 				0171FBD5294BA58C007DCD99 /* ContentView.swift */,
 				0171FBD7294BA58D007DCD99 /* Assets.xcassets */,
 				0171FBD9294BA58D007DCD99 /* Preview Content */,
+				0171FBE1294BA79C007DCD99 /* AudioRecorder.swift */,
+				0171FBE3294BAD45007DCD99 /* RecordingsList.swift */,
+				0171FBE5294BB259007DCD99 /* Extensions.swift */,
+				0171FBE7294BBC1B007DCD99 /* RecordingDataModel.swift */,
+				0171FBE9294BBE3D007DCD99 /* Helper.swift */,
+				0171FBEB294BCF31007DCD99 /* AudioPlayer.swift */,
 			);
 			path = BlkBrdVoiceRecorder;
 			sourceTree = "<group>";
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0171FBE6294BB259007DCD99 /* Extensions.swift in Sources */,
+				0171FBEA294BBE3D007DCD99 /* Helper.swift in Sources */,
+				0171FBE2294BA79C007DCD99 /* AudioRecorder.swift in Sources */,
+				0171FBEC294BCF31007DCD99 /* AudioPlayer.swift in Sources */,
 				0171FBD6294BA58C007DCD99 /* ContentView.swift in Sources */,
+				0171FBE8294BBC1B007DCD99 /* RecordingDataModel.swift in Sources */,
 				0171FBD4294BA58C007DCD99 /* BlkBrdVoiceRecorderApp.swift in Sources */,
+				0171FBE4294BAD45007DCD99 /* RecordingsList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +294,7 @@
 				DEVELOPMENT_TEAM = 2MWFTHNH2D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "${PRODUCT_NAME} needs to access to the microphone for recording a posts audio.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +324,7 @@
 				DEVELOPMENT_TEAM = 2MWFTHNH2D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "${PRODUCT_NAME} needs to access to the microphone for recording a posts audio.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
