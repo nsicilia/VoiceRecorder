@@ -44,7 +44,7 @@ struct RecordingRow: View{
             Text("\(audioURL.lastPathComponent)")
             Spacer()
             
-            //MARK: Play/Pause Button
+            //MARK: Play/Stop Button
             if audioPlayer.isPlaying == false {
                 //Audio is not playing
                 Button {

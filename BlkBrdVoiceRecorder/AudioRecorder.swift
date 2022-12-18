@@ -54,11 +54,14 @@ class AudioRecorder: NSObject, ObservableObject {
         let audioFileName = documentPath.appendingPathComponent("\(Date().toString(dateFormat: "dd-MM-YY_'at'_HH:mm:ss")).m4a")
         
         let settings = [
+            AVEncoderBitRateKey: 32000,
             AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
-            AVSampleRateKey: 12000,
+            AVSampleRateKey: 44100,
             AVNumberOfChannelsKey: 1,
             AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
         ]
+        
+
         
         //start the recording with audioRecorder property
         do{
