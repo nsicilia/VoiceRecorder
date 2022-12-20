@@ -32,3 +32,22 @@ extension AVMutableCompositionTrack {
         
     }
 }
+
+//Extension to check if headphones are connected to the device
+extension AVAudioSession {
+
+    static var isHeadphonesConnected: Bool {
+        return sharedInstance().isHeadphonesConnected
+    }
+
+    var isHeadphonesConnected: Bool {
+        return !currentRoute.outputs.filter { $0.isHeadphones }.isEmpty
+    }
+
+}
+// support extension to the AVAudioSession
+extension AVAudioSessionPortDescription {
+    var isHeadphones: Bool {
+        return portType == AVAudioSession.Port.headphones
+    }
+}
