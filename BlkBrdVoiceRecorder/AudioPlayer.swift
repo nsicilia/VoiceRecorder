@@ -64,6 +64,13 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     }
     
     
+    //MARK: Pause audio playback
+    func pausePlayback(){
+        audioPlayer.pause()
+        isPlaying = false
+    }
+    
+    
     //MARK: Reset audio playing status when finished
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool){
         if flag{

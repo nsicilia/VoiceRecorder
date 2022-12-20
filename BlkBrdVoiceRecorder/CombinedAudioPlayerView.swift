@@ -45,7 +45,10 @@ struct CombinedAudioPlayerView: View {
                         //Audio is playing
                         Button {
                             print("Stop playing audio")
-                            self.audioPlayer.stopPlayback()
+                            
+                            //self.audioPlayer.stopPlayback()
+                            self.audioPlayer.pausePlayback()
+                            
                         } label: {
                             Image(systemName: "stop.fill")
                                 .imageScale(.large)
